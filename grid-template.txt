@@ -39,3 +39,98 @@
 
 </body>
 </html>
+
+
+/***** Grid layout 2 *****/
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+.item7 { grid-area: item7; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'item1 item1 item4 item4 item5 item6'
+    'item2 item3 item4 item4 item7 item7';
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>  
+  <div class="item6">6</div>
+  <div class="item7">7</div>  
+</div>
+
+</body>
+</html>
+
+
+
+/***** Grid layout 3 *****/
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'item1 item1 item1 item1 item2 item2'
+    'item3 item3 item4 item4 item5 item5';
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>  
+</div>
+
+</body>
+</html>
